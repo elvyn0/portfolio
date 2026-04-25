@@ -43,7 +43,7 @@ Render (Backend)
 
 ## Run Locally
 
-git clone https://github.com/elvyn0/portfolio.git
-cd portfolio
-npm install
-npm run dev
+git clone https://github.com/elvyn0/portfolio.git,
+cd portfolio,
+npm install,
+npm run dev.

@@ -1,15 +1,17 @@
 import Headers from "./Components/Headers";
 import Hero from "./Components/Hero";
 import Home from "./Components/Home";
+import Projects from "./Components/Projects";
 import Skill from "./Components/Skill";
 
 function App() {
   return (
-    <div className="bg-black w-screen h-screen p-5 ">
+    <div className="bg-black  p-5 ">
       <Headers />
-      <Hero />
+
       <Home />
       <Skill />
+      <Projects />
     </div>
   );
 }

@@ -6,114 +6,92 @@ import { SiExpress, SiMongodb, SiPostman, SiRender } from "react-icons/si";
 import { LiaGit } from "react-icons/lia";
 import { assets } from "../assets/assets";
 
+const TechItem = ({ icon, label }) => {
+  return (
+    <div className="flex flex-col items-center gap-2 group">
+      <div className="text-3xl sm:text-4xl md:text-5xl group-hover:scale-110 transition">{icon}</div>
+      <p className="text-xs sm:text-sm text-gray-400">{label}</p>
+    </div>
+  );
+};
+
+const TechImage = ({ src, label, className = "" }) => {
+  return (
+    <div className="flex flex-col items-center gap-2 group">
+      <img src={src} className={`w-10 sm:w-12 md:w-14 transition group-hover:scale-110 ${className}`} />
+      <p className="text-xs sm:text-sm text-gray-400">{label}</p>
+    </div>
+  );
+};
+
 function Skill() {
   return (
-    <div className="text-white flex flex-col gap-5">
-      <h1 className="text-8xl font-bold text-white">
+    <div className="text-white flex flex-col gap-5 max-w-5xl mx-auto px-4">
+      {/* Title */}
+      <h1 className="text-4xl md:text-8xl font-bold">
         Tech <span className="text-neutral-600">Stack</span>
       </h1>
-      {/* Frontend */}
-      <div>
-        <p className="font-semibold text-gray-300 text-lg mb-5">Frontend:</p>
-        <div className="flex flex-row gap-10 text-center items-center">
-          <div>
-            <FaReact className="size-18 text-blue-400 hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <p className="text-gray-400 font-semibold text-sm mt-2">React</p>
-          </div>
-          <div>
-            <IoLogoJavascript className="size-18 text-yellow-300 hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <p className="text-gray-400 font-semibold text-sm mt-2">JavaScript</p>
-          </div>
-          <div>
-            <FaHtml5 className="size-18 text-orange-500 hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <p className="text-gray-400 font-semibold text-sm mt-2">HTML</p>
-          </div>
-          <div>
-            <FaCss3Alt className="size-18 text-blue-400 hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <p className="text-gray-400 font-semibold text-sm mt-2">CSS</p>
-          </div>
-          <div>
-            <RiTailwindCssFill className="size-18 text-blue-200 hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <p className="text-gray-400 font-semibold text-sm mt-2">Tailwind Css</p>
-          </div>
-        </div>
-      </div>
-      {/* Backend */}
 
+      {/* Reusable grid */}
+      {/* FRONTEND */}
       <div>
-        <p className="font-semibold text-gray-300 text-lg mb-2">Backend:</p>
-        <div className="flex flex-row gap-10">
-          <div>
-            <DiNodejs className="size-18 text-green-400 hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <p className="text-gray-400 font-semibold text-sm">Node js</p>
-          </div>
-          <div>
-            <SiExpress className="size-18 text-yellow-300 hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <p className="text-gray-400 font-semibold text-sm">Express js</p>
-          </div>
+        <p className="font-semibold text-gray-300 text-lg mb-1">Frontend</p>
+        <p className="text-neutral-400 text-sm mb-4">Built responsive UI and dynamic components</p>
+
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 text-center">
+          <TechItem icon={<FaReact className="text-blue-400" />} label="React" />
+          <TechItem icon={<IoLogoJavascript className="text-yellow-300" />} label="JavaScript" />
+          <TechItem icon={<FaHtml5 className="text-orange-500" />} label="HTML" />
+          <TechItem icon={<FaCss3Alt className="text-blue-500" />} label="CSS" />
+          <TechItem icon={<RiTailwindCssFill className="text-cyan-300" />} label="Tailwind" />
         </div>
       </div>
-      {/* Database */}
+
+      {/* BACKEND */}
       <div>
-        <p className="font-semibold text-gray-300 text-lg mb-5">Database:</p>
-        <div className="flex items-center">
-          <SiMongodb className="size-18 text-green-600 hover:scale-110 transition-all duration-300 ease-in-out" />
-          <p className="font-semibold text-sm -ml-2">MongoDB</p>
+        <p className="font-semibold text-gray-300 text-lg mb-1">Backend</p>
+        <p className="text-neutral-400 text-sm mb-4">Developed REST APIs and authentication</p>
+
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 text-center">
+          <TechItem icon={<DiNodejs className="text-green-500 md:text-6xl" />} label="Node.js" />
+          <TechItem icon={<SiExpress className="text-yellow-300 md:text-6xl" />} label="Express" />
         </div>
       </div>
-      {/* Familiar With */}
+
+      {/* DATABASE */}
       <div>
-        <p className="font-semibold text-gray-300 text-lg mb-5">Familiar with:</p>
-        <div className="flex flex-row gap-10">
-          <div>
-            <img
-              src={assets.python}
-              className="size-18 hover:scale-110 transition-transform duration-300 ease-in-out"
-            />
-            <p className="text-gray-400 font-semibold text-sm mt-2">Python</p>
-          </div>
-          <div>
-            <img
-              src={assets.nextjs}
-              className="size-18 bg-white rounded-lg hover:scale-110 transition-transform duration-300 ease-in-out"
-            />
-            <p className="text-gray-400 font-semibold text-sm mt-2">Next js</p>
-          </div>
-          <div>
-            <img
-              src={assets.typescript}
-              className="size-18 hover:scale-110 transition-transform duration-300 ease-in-out"
-            />
-            <p className="text-gray-400 font-semibold text-sm mt-2">TypeScript</p>
-          </div>
+        <p className="font-semibold text-gray-300 text-lg mb-1">Database</p>
+        <p className="text-neutral-400 text-sm mb-4">Designed schemas for users and bookings</p>
+
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 text-center">
+          <TechItem icon={<SiMongodb className="text-green-500" />} label="MongoDB" />
         </div>
       </div>
-      {/* Tools */}
+
+      {/* FAMILIAR */}
       <div>
-        <p className="font-semibold text-gray-300 text-lg mb-5">Tools:</p>
-        <div className="flex flex-row gap-10 text-center">
-          <div>
-            <LiaGit className="size-18 text-orange-600 hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <p className="text-gray-400 font-semibold text-sm mt-2">git</p>
-          </div>
-          <div>
-            <FaGithub className="size-18 bg-white text-black p-2 rounded-lg hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <p className="text-gray-400 font-semibold text-sm mt-2">gitHub</p>
-          </div>
-          <div>
-            <SiPostman className="size-18 text-orange-500 hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <p className="text-gray-400 font-semibold text-sm mt-2">Postman</p>
-          </div>
-          <div>
-            <IoLogoVercel className="size-18 bg-white text-black rounded-lg p-2 hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <p className="text-gray-400 font-semibold text-sm mt-2">Vercel</p>
-          </div>
-          <div>
-            <SiRender className="size-18 bg-white text-black p-2 rounded-lg hover:scale-110 transition-transform duration-300 ease-in-out" />
-            <p className="text-gray-400 font-semibold text-sm mt-2">Render</p>
-          </div>
+        <p className="font-semibold text-gray-300 text-lg mb-4">Familiar With</p>
+
+        <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 text-center">
+          <TechImage src={assets.python} label="Python" />
+
+          <TechImage src={assets.nextjs} label="Next.js" className="bg-white p-1 rounded-md" />
+
+          <TechImage src={assets.typescript} label="TypeScript" />
         </div>
-        <div></div>
+      </div>
+
+      {/* TOOLS */}
+      <div>
+        <p className="font-semibold text-gray-300 text-lg mb-4">Tools</p>
+
+        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-6 text-center">
+          <TechItem icon={<LiaGit className="text-red-500" />} label="Git" />
+          <TechItem icon={<FaGithub className=" text-black bg-white p-1 rounded-md" />} label="GitHub" />
+          <TechItem icon={<SiPostman className="text-orange-500" />} label="Postman" />
+          <TechItem icon={<IoLogoVercel className="text-black bg-white p-1 rounded-md" />} label="Vercel" />
+          <TechItem icon={<SiRender className="text-black bg-white p-1 rounded-md" />} label="Render" />
+        </div>
       </div>
     </div>
   );

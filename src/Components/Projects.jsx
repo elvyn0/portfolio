@@ -33,22 +33,37 @@ function Projects() {
 
         {/* Description */}
         <p className="text-gray-300 mb-6 leading-relaxed">
-          A full stack travel platform combining social media and hotel booking in one application. Users can share
-          experiences, connect with others, and book hotels seamlessly. The platform includes real-time messaging, AI
-          assistance, and an admin dashboard for managing bookings and system data.
+          A full stack travel platform that combines social interaction with hotel booking in a single system. Users can
+          share travel experiences, connect with others, and book hotels through a structured booking flow with date
+          selection and management features. The application is built with a scalable backend architecture, real-time
+          communication, and an admin dashboard for managing hotels, users, and booking analytics.
         </p>
 
         {/* Highlights */}
         <div className="mb-6">
           <p className="font-semibold mb-3 text-2xl">Highlights</p>
+
           <ul className="list-disc list-inside space-y-2 text-gray-300">
-            <li>User authentication and profile system</li>
-            <li>Create and share travel posts and blogs</li>
-            <li>Hotel booking with date selection and payment</li>
-            <li>Booking management (view, cancel, delete)</li>
-            <li>Real-time user messaging</li>
-            <li>AI chat assistant</li>
-            <li>Admin dashboard with analytics</li>
+            <li>Implemented secure user authentication and role-based access control (user/admin)</li>
+
+            <li>
+              Built a complete hotel booking flow with date selection, availability handling, and booking lifecycle
+              (create, cancel, delete)
+            </li>
+
+            <li>Designed RESTful APIs using Node.js and Express with structured routes and middleware</li>
+
+            <li>Modeled MongoDB schemas for users, hotels, and bookings with efficient data relationships</li>
+
+            <li>Integrated real-time messaging using WebSockets for live user communication</li>
+
+            <li>Developed a scalable admin dashboard with analytics (users, bookings, revenue tracking)</li>
+
+            <li>Implemented image upload and optimization for posts and hotel listings</li>
+
+            <li>Integrated AI chat assistant to enhance user interaction and support</li>
+
+            <li>Built responsive frontend with dynamic state management and optimized rendering</li>
           </ul>
         </div>
 

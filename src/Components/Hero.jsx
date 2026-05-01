@@ -4,33 +4,50 @@ import { ArrowRight } from "lucide-react";
 
 function Hero() {
   return (
-    <div className="md:pt-18">
-      <div className="flex flex-col gap-5 bg-white w-fit py-5 px-3 h-fit   pb-2 items-center justify-center rounded-2xl">
-        <div className="flex flex-col text-center">
-          <p className="text-sm text-gray-400 font-semibold mb-0 -ml-47">Hi, I'm</p>
-          <h1 className="font-bold text-5xl">Anoop</h1>
+    <div className="w-full md:pt-16 flex justify-center md:justify-start">
+      <div className="flex flex-col gap-6 bg-white w-full max-w-sm md:max-w-xs p-5 rounded-2xl shadow-md items-center text-center">
+        {/* Intro */}
+        <div>
+          <p className="text-xs sm:text-sm text-gray-400 font-semibold mb-1">Hi, I'm</p>
+          <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl">Anoop</h1>
         </div>
 
-        <div className="flex flex-col  items-center justify-center text-center gap-5">
-          <div>
-            <p className="mb-5 text-2xl font-bold">Full Stack Developer</p>
-            <p className="text-gray-500 font-semibold">
-              I build and deploy scalable full-stack applications that solve real-world problems.
-            </p>
-          </div>
-          <div className="flex  gap-3">
-            <a href="https://www.linkedin.com/in/anoop0" target="_blank" rel="noopener noreferrer">
-              <CiLinkedin className="size-10 text-blue-900 hover:bg-gray-200 p-1 cursor-pointer rounded-lg transition" />
-            </a>
+        {/* Role + Tagline */}
+        <div className="flex flex-col gap-3">
+          <p className="text-lg sm:text-xl font-semibold text-gray-800">Full Stack Developer</p>
 
-            <a href="https://github.com/elvyn0" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="size-10 text-black hover:bg-gray-200 p-1 cursor-pointer rounded-lg transition" />
-            </a>
-          </div>
-          <div className="flex items-center gap-3 mb-3">
-            <ArrowRight className="size-6 text-red-500" />
-            <button className="bg-black text-white py-3 px-6 rounded-full font-black cursor-pointer">Resume</button>
-          </div>
+          <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
+            I build and deploy full stack applications designed for real-world use.
+          </p>
+        </div>
+
+        {/* Socials */}
+        <div className="flex gap-4">
+          <a
+            href="https://www.linkedin.com/in/anoop0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-lg hover:bg-gray-100 transition"
+          >
+            <CiLinkedin className="text-blue-700 text-2xl sm:text-3xl" />
+          </a>
+
+          <a
+            href="https://github.com/elvyn0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-2 rounded-lg hover:bg-gray-100 transition"
+          >
+            <FaGithub className="text-black text-2xl sm:text-3xl" />
+          </a>
+        </div>
+
+        {/* CTA */}
+        <div className="flex items-center gap-2">
+          <ArrowRight className="size-5 text-red-500" />
+          <button className="bg-black text-white py-2 px-5 rounded-full font-semibold hover:bg-gray-800 transition">
+            Resume
+          </button>
         </div>
       </div>
     </div>

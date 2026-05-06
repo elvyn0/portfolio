@@ -1,6 +1,6 @@
 import { CiLinkedin } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
-import { ArrowRight } from "lucide-react";
+import { Download } from "lucide-react";
 import { motion } from "framer-motion";
 import { fadeUp } from "./Animations";
 
@@ -30,7 +30,7 @@ function Hero() {
               href="https://www.linkedin.com/in/anoop0"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg hover:bg-gray-100 transition"
+              className="p-2 rounded-lg hover:bg-gray-100 transition-all"
             >
               <CiLinkedin className="text-blue-700 text-2xl sm:text-3xl" />
             </a>
@@ -39,18 +39,28 @@ function Hero() {
               href="https://github.com/elvyn0"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg hover:bg-gray-100 transition"
+              className="p-2 rounded-lg hover:bg-gray-100 transition-all"
             >
               <FaGithub className="text-black text-2xl sm:text-3xl" />
             </a>
           </div>
 
           {/* CTA */}
-          <div className="flex items-center gap-2">
-            <ArrowRight className="size-5 text-red-500" />
-            <button className="bg-black text-white py-2 px-5 rounded-full font-semibold hover:bg-gray-800 transition">
-              Resume
-            </button>
+          <div className="flex items-center gap-3">
+            {/* View */}
+            <a href="/public/Anoop_S_Software_Developer_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <button className="bg-black text-white py-2 px-5 rounded-full font-semibold hover:bg-gray-800 transition">
+                Resume
+              </button>
+            </a>
+            {/* Download */}
+            <a
+              href="/public/Anoop_S_Software_Developer_Resume.pdf"
+              download="Anoop_S_Software_Developer_Resume.pdf"
+              className="cursor-pointer hover:bg-gray-100 p-1 rounded-full transition-all"
+            >
+              <Download />
+            </a>
           </div>
         </div>
       </div>

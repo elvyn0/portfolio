@@ -42,9 +42,7 @@ The ultimate hub for travelers, combining social connectivity with functional tr
 
     Tech Highlight: Implemented complex state management to handle synchronized data across the social feed and booking engines.
 
-
-
-    2. Textures (E-Commerce)
+2.  Textures (E-Commerce)
 
 A High-Performance Retail Experience
 A sleek, responsive cloth shopping application focused on user conversion and smooth navigation.

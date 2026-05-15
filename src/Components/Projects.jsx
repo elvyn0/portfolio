@@ -111,7 +111,7 @@ function Projects() {
             <div className="grid grid-cols-1  gap-4 mb-6">
               <img
                 className="w-full md:h-full object-cover rounded-lg shadow-md hover:scale-105 transition"
-                src="/public/project1image/textures_screenshot.png"
+                src="/project1image/textures_screenshot.png"
                 alt="homepage1"
               />
             </div>

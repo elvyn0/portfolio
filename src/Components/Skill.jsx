@@ -71,19 +71,6 @@ function Skill() {
           </div>
         </div>
 
-        {/* FAMILIAR */}
-        <div>
-          <p className="font-semibold text-gray-300 text-lg mb-4">Familiar With</p>
-
-          <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 text-center">
-            <TechImage src={assets.python} label="Python" />
-
-            <TechImage src={assets.nextjs} label="Next.js" className="bg-white p-1 rounded-md" />
-
-            <TechImage src={assets.typescript} label="TypeScript" />
-          </div>
-        </div>
-
         {/* TOOLS */}
         <div>
           <p className="font-semibold text-gray-300 text-lg mb-4">Tools</p>
@@ -94,6 +81,19 @@ function Skill() {
             <TechItem icon={<SiPostman className="text-orange-500" />} label="Postman" />
             <TechItem icon={<IoLogoVercel className="text-black bg-white p-1 rounded-md" />} label="Vercel" />
             <TechItem icon={<SiRender className="text-black bg-white p-1 rounded-md" />} label="Render" />
+          </div>
+        </div>
+
+        {/* FAMILIAR */}
+        <div>
+          <p className="font-semibold text-gray-300 text-lg mb-4">Familiar With</p>
+
+          <div className="grid grid-cols-3 sm:grid-cols-4 gap-6 text-center">
+            <TechImage src={assets.python} label="Python" />
+
+            <TechImage src={assets.nextjs} label="Next.js" className="bg-white p-1 rounded-md" />
+
+            <TechImage src={assets.typescript} label="TypeScript" />
           </div>
         </div>
       </div>

@@ -8,16 +8,22 @@ function Hero() {
   return (
     <motion.div variants={fadeUp} initial="hidden" animate="show">
       <div className="w-full md:pt-16 flex justify-center md:justify-start">
-        <div className="flex flex-col gap-6 bg-white w-full max-w-sm md:max-w-xs p-5 rounded-2xl shadow-md items-center text-center">
+        <div className="flex flex-col gap-4  bg-white w-full max-w-sm md:max-w-xs p-5 rounded-2xl shadow-md items-center text-center">
           {/* Intro */}
           <div>
-            <p className="text-xs sm:text-sm text-gray-400 font-semibold mb-1">Hi, I'm</p>
-            <h1 className="font-bold text-3xl sm:text-4xl md:text-5xl">Anoop</h1>
+            <img className="rounded-3xl w-60 md:w-full" src="project1image/Anoop_profilepic.jpg" />
+          </div>
+          <div className="flex">
+            <p className="text-md md:text-md text-gray-400 font-semibold">Hi, I'm</p>
+            <h1 className="font-bold text-4xl  md:text-5xl mt-2">Anoop</h1>
           </div>
 
           {/* Role + Tagline */}
           <div className="flex flex-col gap-3">
-            <p className="text-lg sm:text-xl font-semibold text-gray-800">Full Stack Developer</p>
+            <div>
+              <p className="text-lg md:text-xl font-semibold text-gray-800 mb-1">Full Stack Developer</p>
+              <p className="font-semibold text-red-800">[ MERN Stack ]</p>
+            </div>
 
             <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
               I build and deploy full stack applications designed for real-world use.
@@ -32,7 +38,7 @@ function Hero() {
               rel="noopener noreferrer"
               className="p-2 rounded-lg hover:bg-gray-100 transition-all"
             >
-              <CiLinkedin className="text-blue-700 text-2xl sm:text-3xl" />
+              <CiLinkedin className="text-blue-700 text-3xl" />
             </a>
 
             <a
@@ -41,7 +47,7 @@ function Hero() {
               rel="noopener noreferrer"
               className="p-2 rounded-lg hover:bg-gray-100 transition-all"
             >
-              <FaGithub className="text-black text-2xl sm:text-3xl" />
+              <FaGithub className="text-black text-3xl" />
             </a>
           </div>
 

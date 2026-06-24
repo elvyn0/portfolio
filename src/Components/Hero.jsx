@@ -26,7 +26,7 @@ function Hero() {
             </div>
 
             <p className="text-gray-500 text-sm sm:text-base leading-relaxed">
-              I build and deploy full stack applications designed for real-world use.
+              Building real-time apps, booking systems, and AI-powered products with the MERN stack.
             </p>
           </div>
 
@@ -54,14 +54,14 @@ function Hero() {
           {/* CTA */}
           <div className="flex items-center gap-3">
             {/* View */}
-            <a href="/Anoop_S_FullStack_Developer_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="/Anoop_S_Full_Stack_Developer_Resume.pdf" target="_blank" rel="noopener noreferrer">
               <button className="bg-black text-white py-2 px-5 rounded-full font-semibold hover:bg-gray-800 transition">
                 Resume
               </button>
             </a>
             {/* Download */}
             <a
-              href="Anoop_S_FullStack_Developer_Resume.pdf"
+              href="Anoop_S_Full_Stack_Developer_Resume.pdf"
               download="Anoop_S_FullStack_Developer_Resume.pdf"
               className="cursor-pointer hover:bg-gray-100 p-1 rounded-full transition-all"
             >

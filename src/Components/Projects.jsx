@@ -14,7 +14,9 @@ function Projects() {
           {/* Project 1 */}
           <div>
             {/* Title */}
-            <h2 className="font-semibold text-2xl md:text-4xl text-orange-500 mb-6">Scenic Wonders</h2>
+            <h2 className="font-semibold text-2xl md:text-5xl text-orange-500 mb-6">
+              Scenic Wonders<span className="text-white text-2xl"> — Travel Community & Booking Platform</span>
+            </h2>
 
             {/* Screenshots */}
             <div className="grid grid-cols-1  gap-4 mb-6">
@@ -49,26 +51,46 @@ function Projects() {
               <p className="font-semibold mb-3 text-2xl">Highlights</p>
 
               <ul className="list-disc list-inside space-y-2 text-gray-300">
-                <li>Implemented secure user authentication and role-based access control (user/admin)</li>
-
                 <li>
-                  Built a complete hotel booking flow with date selection, availability handling, and booking lifecycle
-                  (create, cancel, delete)
+                  🔐 JWT-based authentication with role-based access control — separate user and admin flows with
+                  protected routes and persistent sessions
                 </li>
 
-                <li>Designed RESTful APIs using Node.js and Express with structured routes and middleware</li>
+                <li>
+                  🏨 Complete hotel booking system with date-based availability checks, advanced search filtering,
+                  booking lifecycle management (create, cancel, delete) and booking history
+                </li>
 
-                <li>Modeled MongoDB schemas for users, hotels, and bookings with efficient data relationships</li>
+                <li className="no">
+                  💳 Secure Stripe payment integration for hotel bookings with transaction management
+                </li>
 
-                <li>Integrated real-time messaging using WebSockets for live user communication</li>
+                <li>
+                  💬 Real-time messaging with Socket.io — instant communication, unread message tracking and
+                  synchronized chat updates
+                </li>
 
-                <li>Developed a scalable admin dashboard with analytics (users, bookings, revenue tracking)</li>
+                <li>
+                  🤖 AI-powered travel assistant using Groq/LLaMA for context-aware destination recommendations and trip
+                  planning support
+                </li>
 
-                <li>Implemented image upload and optimization for posts and hotel listings</li>
+                <li>
+                  📊 Comprehensive admin dashboard with full CRUD operations — manage users, hotels, bookings and track
+                  revenue analytics
+                </li>
 
-                <li>Integrated AI chat assistant to enhance user interaction and support</li>
+                <li>🖼️ Image upload and optimization using Cloudinary for posts and hotel listings</li>
 
-                <li>Built responsive frontend with dynamic state management and optimized rendering</li>
+                <li>
+                  ⚡ Scalable backend built with Node.js, Express.js, MVC architecture and structured RESTful APIs
+                </li>
+
+                <li>
+                  🗄️ MongoDB schemas designed for efficient data relationships across users, hotels, bookings and social
+                  features
+                </li>
+                <li>📱 Fully responsive React.js frontend with dynamic state management using Context API</li>
               </ul>
             </div>
 
@@ -105,7 +127,9 @@ function Projects() {
           {/* Project 2 */}
           <div>
             {/* Title */}
-            <h2 className="font-semibold text-2xl md:text-4xl text-orange-500 mb-6">Textures</h2>
+            <h2 className="font-semibold text-2xl md:text-5xl text-orange-500 mb-6">
+              Textures<span className="text-white text-2xl"> — E-commerce</span>
+            </h2>
 
             {/* Screenshots */}
             <div className="grid grid-cols-1  gap-4 mb-6">

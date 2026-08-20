@@ -8,7 +8,7 @@ function Hero() {
   return (
     <motion.div variants={fadeUp} initial="hidden" animate="show">
       <div className="w-full md:pt-16 flex justify-center md:justify-start">
-        <div className="flex flex-col gap-4  bg-[#ecece1] w-full max-w-sm md:max-w-xs p-5 rounded-2xl shadow-md items-center text-center">
+        <div className="flex flex-col gap-4  bg-white w-full max-w-sm md:max-w-xs p-5 rounded-2xl shadow-md items-center text-center">
           {/* Intro */}
           <div>
             <img className="rounded-3xl w-60 md:w-full" src="project1image/Anoop_profilepic.jpg" />

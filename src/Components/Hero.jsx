@@ -8,7 +8,7 @@ function Hero() {
   return (
     <motion.div variants={fadeUp} initial="hidden" animate="show">
       <div className="w-full md:pt-16 flex justify-center md:justify-start">
-        <div className="flex flex-col gap-4  bg-white w-full max-w-sm md:max-w-xs p-5 rounded-2xl shadow-md items-center text-center">
+        <div className="flex flex-col gap-4  bg-[#ecece1] w-full max-w-sm md:max-w-xs p-5 rounded-2xl shadow-md items-center text-center">
           {/* Intro */}
           <div>
             <img className="rounded-3xl w-60 md:w-full" src="project1image/Anoop_profilepic.jpg" />
@@ -36,7 +36,7 @@ function Hero() {
               href="https://www.linkedin.com/in/anoop0"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg hover:bg-gray-100 transition-all"
+              className="p-2 rounded-lg hover:bg-gray-300  duration-500 transition-all"
             >
               <CiLinkedin className="text-blue-700 text-3xl" />
             </a>
@@ -45,7 +45,7 @@ function Hero() {
               href="https://github.com/elvyn0"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-lg hover:bg-gray-100 transition-all"
+              className="p-2 rounded-lg hover:bg-gray-300 duration-500 transition-all"
             >
               <FaGithub className="text-black text-3xl" />
             </a>
@@ -55,7 +55,7 @@ function Hero() {
           <div className="flex items-center gap-3">
             {/* View */}
             <a href="/Anoop_S_Full_Stack_Developer_Resume.pdf" target="_blank" rel="noopener noreferrer">
-              <button className="bg-black text-white py-2 px-5 rounded-full font-semibold hover:bg-gray-800 transition">
+              <button className="bg-black text-white py-2 px-5 rounded-full font-semibold hover:bg-gray-800 transition cursor-pointer">
                 Resume
               </button>
             </a>
@@ -63,7 +63,7 @@ function Hero() {
             <a
               href="Anoop_S_Full_Stack_Developer_Resume.pdf"
               download="Anoop_S_FullStack_Developer_Resume.pdf"
-              className="cursor-pointer hover:bg-gray-100 p-1 rounded-full transition-all"
+              className="cursor-pointer hover:bg-gray-300 duration-500 p-1 rounded-full transition-all "
             >
               <Download />
             </a>

@@ -11,7 +11,9 @@ import { fadeUp } from "./Animations";
 const TechItem = ({ icon, label }) => {
   return (
     <div className="flex flex-col items-center gap-2 group">
-      <div className="text-3xl sm:text-4xl md:text-5xl group-hover:scale-110 transition">{icon}</div>
+      <div className="text-3xl sm:text-4xl md:text-5xl group-hover:scale-125 duration-500 cursor-pointer transition">
+        {icon}
+      </div>
       <p className="text-xs sm:text-sm text-gray-400">{label}</p>
     </div>
   );

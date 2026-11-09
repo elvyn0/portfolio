@@ -15,7 +15,7 @@ function Projects() {
       category: "TRAVEL COMMUNITY & BOOKING",
       image: scenicActiveScreen,
       liveUrl: "https://scenic-wonders.vercel.app",
-      githubUrl: "https://github.com/elvyn0/ScenicWonders.git",
+      githubUrl: "https://github.com/elvyn0/ScenicWonders",
       hasThumbnails: true,
       screens: [
         { label: "FEED", src: "/project1image/homepage1.png" },
@@ -29,7 +29,7 @@ function Projects() {
       category: "HOTEL & OPERATIONS DASHBOARD",
       image: "/project1image/adminpanel.png",
       liveUrl: "https://scenic-wonders-adminpanel.vercel.app",
-      githubUrl: "https://github.com/elvyn0/ScenicWonders.git",
+      githubUrl: "https://github.com/elvyn0/ScenicWonders",
       hasThumbnails: false,
     },
     {
@@ -38,7 +38,7 @@ function Projects() {
       category: "E-COMMERCE PLATFORM",
       image: "/project1image/textures_screenshot.png",
       liveUrl: "https://textures-sable-ten.vercel.app",
-      githubUrl: "https://github.com/elvyn0/E-commerce.git",
+      githubUrl: "https://github.com/elvyn0/E-commerce",
       hasThumbnails: false,
     },
 
@@ -103,8 +103,8 @@ function Projects() {
                             setScenicActiveScreen(s.src);
                           }}
                           className={`px-2 py-0.5 rounded text-[9px] font-bold tracking-wider uppercase transition-all cursor-pointer ${scenicActiveScreen === s.src
-                              ? "bg-red-600 text-white shadow-[0_0_8px_rgba(220,38,38,0.7)]"
-                              : "bg-black/80 text-neutral-400 hover:text-white"
+                            ? "bg-red-600 text-white shadow-[0_0_8px_rgba(220,38,38,0.7)]"
+                            : "bg-black/80 text-neutral-400 hover:text-white"
                             }`}
                         >
                           {s.label}

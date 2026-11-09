@@ -45,10 +45,7 @@ function Hero() {
             {/* Huge Stacked Name matching reference */}
             <div className="leading-[0.88] select-none">
               <h2 className="font-bebas text-6xl sm:text-7xl lg:text-8xl tracking-wider text-white">
-                ANOOP
-              </h2>
-              <h2 className="font-bebas text-6xl sm:text-7xl lg:text-8xl tracking-wider text-white">
-                S
+                ANOOP S
               </h2>
             </div>
 

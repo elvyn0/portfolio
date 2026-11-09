@@ -1,6 +1,7 @@
 import Headers from "./Components/Headers";
 import Hero from "./Components/Hero";
 import Projects from "./Components/Projects";
+import Skills from "./Components/Skills";
 import BentoSection from "./Components/BentoSection";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
@@ -25,6 +26,10 @@ function App() {
 
           <section id="projects" className="scroll-mt-12">
             <Projects />
+          </section>
+
+          <section id="skills" className="scroll-mt-12">
+            <Skills />
           </section>
 
           <section id="process" className="scroll-mt-12">

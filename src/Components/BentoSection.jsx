@@ -1,26 +1,9 @@
 import { motion } from "framer-motion";
 import { fadeUp } from "./Animations";
-import { Search, Lightbulb, Edit3, Code2, Send, Sparkles } from "lucide-react";
+import { Search, Lightbulb, Edit3, Code2, Send, GraduationCap, Award, Compass, Cpu, CheckCircle2 } from "lucide-react";
 import TiltCard from "./TiltCard";
 
 function BentoSection() {
-  const skills = [
-    "WEB DESIGN",
-    "REACT.JS",
-    "NODE.JS",
-    "EXPRESS",
-    "MONGODB",
-    "NEXT.JS",
-    "TYPESCRIPT",
-    "TAILWIND CSS",
-    "DOCKER",
-    "AWS S3 & EC2",
-    "GIT & GITHUB",
-    "REST APIS",
-    "PYTHON",
-    "SOCKET.IO",
-  ];
-
   const workSteps = [
     {
       num: "01",
@@ -54,62 +37,71 @@ function BentoSection() {
     },
   ];
 
+  const engineeringHighlights = [
+    {
+      title: "Full-Stack Architecture",
+      desc: "Production-ready applications with modular, testable codebases.",
+    },
+    {
+      title: "Real-Time & Event-Driven",
+      desc: "Instant bi-directional data flow using Socket.io and REST APIs.",
+    },
+    {
+      title: "Cloud & DevOps Integration",
+      desc: "Containerized with Docker, automated CI/CD, hosted on AWS & Vercel.",
+    },
+  ];
+
   return (
     <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.1 }}>
       <div className="w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 py-10 md:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-stretch">
 
-          {/* ================= COLUMN 1: EDUCATION & SKILLS ================= */}
+          {/* ================= COLUMN 1: EDUCATION & CORE FOUNDATION ================= */}
           <TiltCard
             maxTilt={4}
             scale={1.01}
             className="lg:col-span-5 p-6 sm:p-8 rounded-xl bg-neutral-950/80 border border-neutral-900 flex flex-col justify-between"
           >
             <div>
-              <h3 className="text-sm font-bold tracking-widest uppercase text-white mb-6">
-                EDUCATION &amp; SKILLS
-              </h3>
 
-              {/* EDUCATION */}
-              <div className="space-y-4 mb-8">
-                <span className="text-[11px] font-bold uppercase tracking-wider text-red-600 block">
-                  EDUCATION
-                </span>
 
-                <div className="space-y-4">
-                  <div className="flex items-start justify-between gap-3 border-b border-neutral-900 pb-3">
-                    <div>
-                      <h4 className="text-xs sm:text-sm font-bold text-white">
-                        Full Stack MERN Specialization
-                      </h4>
-                      <p className="text-[11px] text-neutral-400 mt-0.5">
-                        Self-Taught &amp; Production Applications
+
+              {/* Engineering Pillars */}
+              <div>
+                <h4 className="text-[10px] font-mono font-bold tracking-widest uppercase text-red-500 mb-3 flex items-center gap-1.5">
+                  <Cpu className="w-3.5 h-3.5" />
+                  <span>ENGINEERING PHILOSOPHY</span>
+                </h4>
+
+                <div className="space-y-2.5">
+                  {engineeringHighlights.map((item, idx) => (
+                    <div
+                      key={idx}
+                      className="p-2.5 rounded-lg bg-black/60 border border-neutral-850 hover:border-neutral-750 transition-colors"
+                    >
+                      <div className="flex items-center gap-2">
+                        <CheckCircle2 className="w-3.5 h-3.5 text-red-500 shrink-0" />
+                        <h5 className="text-xs font-bold text-neutral-200">
+                          {item.title}
+                        </h5>
+                      </div>
+                      <p className="text-[11px] text-neutral-400 mt-1 pl-5.5 leading-relaxed">
+                        {item.desc}
                       </p>
                     </div>
-                    <span className="text-xs font-mono text-red-600 font-bold shrink-0">
-                      2025 - Present
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              {/* SKILLS */}
-              <div>
-                <span className="text-[11px] font-bold uppercase tracking-wider text-red-600 block mb-3">
-                  SKILLS
-                </span>
-
-                <div className="flex flex-wrap gap-2">
-                  {skills.map((skill, idx) => (
-                    <span
-                      key={idx}
-                      className="px-3 py-1.5 rounded bg-black border border-neutral-800 text-[11px] font-bold tracking-wider text-neutral-300 hover:text-white hover:border-neutral-600 transition-colors cursor-default"
-                    >
-                      {skill}
-                    </span>
                   ))}
                 </div>
               </div>
+            </div>
+
+            {/* Bottom Status Indicator */}
+            <div className="pt-4 mt-5 border-t border-neutral-900 flex items-center justify-between text-[10px] text-neutral-400 font-mono">
+              <span className="flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                <span>CLEAN CODE GUARANTEED</span>
+              </span>
+              <span className="text-red-500 font-bold">PRODUCTION READY</span>
             </div>
           </TiltCard>
 
@@ -117,41 +109,49 @@ function BentoSection() {
           <TiltCard
             maxTilt={4}
             scale={1.01}
-            className="lg:col-span-4 p-6 sm:p-8 rounded-xl bg-neutral-950/80 border border-neutral-900"
+            className="lg:col-span-4 p-6 sm:p-8 rounded-xl bg-neutral-950/80 border border-neutral-900 flex flex-col justify-between"
           >
-            <h3 className="text-sm font-bold tracking-widest uppercase text-white mb-6">
-              WORK PROCESS
-            </h3>
+            <div>
+              <h3 className="text-sm font-bold tracking-widest uppercase text-white mb-6">
+                WORK PROCESS
+              </h3>
 
-            <div className="space-y-5 relative">
-              {/* Continuous vertical red connector line matching reference */}
-              <div className="absolute top-4 bottom-4 left-4 w-[1px] bg-red-900/60" />
+              <div className="space-y-5 relative">
+                {/* Continuous vertical red connector line matching reference */}
+                <div className="absolute top-4 bottom-4 left-4 w-[1px] bg-red-900/60" />
 
-              {workSteps.map((step, idx) => {
-                const Icon = step.icon;
-                return (
-                  <div key={idx} className="relative flex items-start gap-4 group">
-                    {/* Red Outlined Circle with Icon matching reference */}
-                    <div className="relative z-10 w-8 h-8 rounded-full bg-black border border-red-700/80 flex items-center justify-center shrink-0 group-hover:border-red-500 transition-colors">
-                      <Icon className="w-3.5 h-3.5 text-red-500" />
-                    </div>
-
-                    <div>
-                      <div className="flex items-center gap-2">
-                        <span className="text-[11px] font-bold text-red-600 font-mono">
-                          {step.num}
-                        </span>
-                        <h4 className="text-xs font-bold uppercase tracking-wider text-white">
-                          {step.title}
-                        </h4>
+                {workSteps.map((step, idx) => {
+                  const Icon = step.icon;
+                  return (
+                    <div key={idx} className="relative flex items-start gap-4 group">
+                      {/* Red Outlined Circle with Icon matching reference */}
+                      <div className="relative z-10 w-8 h-8 rounded-full bg-black border border-red-700/80 flex items-center justify-center shrink-0 group-hover:border-red-500 transition-colors">
+                        <Icon className="w-3.5 h-3.5 text-red-500" />
                       </div>
-                      <p className="text-[11px] text-neutral-400 leading-relaxed mt-1">
-                        {step.desc}
-                      </p>
+
+                      <div>
+                        <div className="flex items-center gap-2">
+                          <span className="text-[11px] font-bold text-red-600 font-mono">
+                            {step.num}
+                          </span>
+                          <h4 className="text-xs font-bold uppercase tracking-wider text-white">
+                            {step.title}
+                          </h4>
+                        </div>
+                        <p className="text-[11px] text-neutral-400 leading-relaxed mt-1">
+                          {step.desc}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Bottom Process summary */}
+            <div className="pt-4 mt-5 border-t border-neutral-900 flex items-center justify-between text-[10px] text-neutral-400 font-mono">
+              <span>AGILE ITERATION</span>
+              <span className="text-red-500 font-bold">5 STAGES</span>
             </div>
           </TiltCard>
 

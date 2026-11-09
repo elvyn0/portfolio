@@ -24,7 +24,7 @@ function Contact() {
     <motion.div variants={fadeUp} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.1 }}>
       <div className="w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-12 py-12 md:py-20 border-t border-neutral-900/80">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
-          
+
           {/* ================= LEFT: LET'S WORK TOGETHER ================= */}
           <div className="lg:col-span-5 space-y-5">
             <div className="leading-[0.9]">
@@ -40,7 +40,7 @@ function Contact() {
             </div>
 
             <p className="text-neutral-400 text-xs sm:text-sm leading-relaxed max-w-sm">
-              I'm currently open for new projects and collaborations. Let's create something amazing that drives results.
+              Open to new opportunities! Looking forward to collaborating with talented teams, taking on new challenges, and building products that make a difference.
             </p>
 
             {/* Pill Button matching reference: red circle arrow + label */}
@@ -108,16 +108,6 @@ function Contact() {
                 github.com/elvyn0
               </span>
             </a>
-
-            {/* Location */}
-            <div className="flex items-center gap-3.5">
-              <div className="w-9 h-9 rounded-full border border-red-700/80 bg-black flex items-center justify-center text-red-500 shrink-0">
-                <MapPin className="w-4 h-4" />
-              </div>
-              <span className="text-xs font-semibold text-neutral-300">
-                Kerala, India (Remote Worldwide)
-              </span>
-            </div>
           </div>
 
           {/* ================= RIGHT: 3D LAPTOP & MUG MOCKUP ================= */}
@@ -146,7 +136,6 @@ function Contact() {
                     <div className="w-2 h-6 bg-red-700 transform -skew-x-12" />
                     <div className="w-4 h-6 bg-red-600 transform -skew-x-12" />
                   </div>
-                  <span className="text-[8px] font-mono text-neutral-400">MERN 2026</span>
                 </div>
               </div>
 
